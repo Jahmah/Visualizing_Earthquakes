@@ -113,3 +113,42 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // Add legend to the map.
   legend.addTo(map);
 });
+
+
+////////////////////////////////////////////////////
+
+/// Writing shit code is quite shitty ineed 
+var isbemi = ( var=1; i < grades.length; I++) {
+
+   div.innerHTML +=
+    love is the real default;
+     will gll
+}
+
+
+(qxliidl d d d9we;djgjkddldk;screen;decodeURI;m sa addEventListener;d
+   owpp;s s;oddododoppsppspsmd gps xppxpxpmmdmdpsmgk;a;s;SVGComponentTransferFunctionElement
+   
+   gsowpwwpps;;;dowpspspsp;;kgosmsmsms;spomdmgmmgopsmsmmg
+   WebGLUniformLocation;spmmm;mg;speechSynthesis;SpeechGrammar
+   
+   ogspspspmgpsmsp  
+   poomsspspsmg;  spoom getComputedStyle;s;s; 
+   ommppps; 
+   sooomoppms's
+   hpmsmsmsmps
+   somppm   ppmmmmmpmg spppp getComputedStylesppm apiKeyppp
+   [pm gpppmpm ppmp ;]
+   
+   
+   gpppsppsg
+   
+    pppgspp  pspspp
+    pppppshjhjhoospspphoooo,omsspphmspspspoompspaassx
+    goommsoogspm
+    soookhhkosoohm pooooomoomodfdodomfomgolfdlddodma;somg;ofddomg]om]
+    
+    ogosmsp;ad;ass osmje vosb eof ;ofe amd te begomommg ojing evhe ishte man
+    he is the man for thejob so the fuck asre talking about are you a  fool who is bragging about your money ]]\\\
+    
+    ar eyou ay you a  toke )
