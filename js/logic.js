@@ -40,7 +40,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     };
   }
 
-  // Specify color of the marker based on the earthquake  magnitude.
+  // Specify color of the marker based on earthquake magnitude.
   function getColor(magnitude) {
     switch (true) {
     case magnitude > 5:
@@ -58,7 +58,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     }
   }
 
-  // This function determines the radius of the earthquake marker based on its magnitude.
+  // Specify marker radius based on earthquake magnitude.
   // Earthquakes with a magnitude of 0 were being plotted with the wrong radius.
   function getRadius(magnitude) {
     if (magnitude === 0) {
@@ -68,26 +68,26 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     return magnitude * 4;
   }
 
-  // Here we add a GeoJSON layer to the map once the file is loaded.
+  // Add a GeoJSON layer to the map once the file is loaded.
   L.geoJson(data, {
-    // We turn each feature into a circleMarker on the map.
+    // Turn each feature into a circleMarker on the map.
     pointToLayer: function(feature, latlng) {
       return L.circleMarker(latlng);
     },
-    // We set the style for each circleMarker using our styleInfo function.
+    // Set the style for each circleMarker using the styleInfo function.
     style: styleInfo,
-    // We create a popup for each marker to display the magnitude and location of the earthquake after the marker has been created and styled
+    // Create a popup for each marker to display the magnitude and location of the earthquake after the marker has been created and styled
     onEachFeature: function(feature, layer) {
       layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
     }
   }).addTo(map);
 
-  // Here we create a legend control object.
+  // Create a legend control object.
   var legend = L.control({
     position: "bottomright"
   });
 
-  // Then add all the details for the legend
+  // Add all legend details
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
 
