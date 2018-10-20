@@ -76,18 +76,18 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     },
     // Set the style for each circleMarker using the styleInfo function.
     style: styleInfo,
-    // Create a popup for each marker to display the magnitude and location of the earthquake after the marker has been created and styled
+    // Create a popup to display the magnitude and location of the earthquake after the marker has been created and styled
     onEachFeature: function(feature, layer) {
       layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
     }
   }).addTo(map);
 
-  // Create a legend control object.
+  // Create legend control object.
   var legend = L.control({
     position: "bottomright"
   });
 
-  // Add all legend details
+  // Add legend details
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
 
@@ -101,7 +101,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       "#ea2c2c"
     ];
 
-    // Looping through our intervals to generate a label with a colored square for each interval.
+    // generate for each interval a colored square label.
     for (var i = 0; i < grades.length; i++) {
       div.innerHTML +=
         "<i style='background: " + colors[i] + "></i> " +
@@ -110,6 +110,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     return div;
   };
 
-  // Finally, we our legend to the map.
+  // Add legend to the map.
   legend.addTo(map);
 });
