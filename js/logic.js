@@ -1,7 +1,7 @@
 // create background for tile layer .
 console.log("working");
 
-// Assign Mapbox access token.
+// Assign variableS Mapbox access token.
 var apiKey = API_KEY;
 
 var quakemap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -16,7 +16,7 @@ var map = L.map("mapid", {
   center: [
     40.7, -94.5
   ],
-  zoom: 3
+  zoom: 2
 });
 
 // Add tile layer to map.
@@ -115,40 +115,12 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 });
 
 
-////////////////////////////////////////////////////
-
-/// Writing shit code is quite shitty ineed 
-var isbemi = ( var=1; i < grades.length; I++) {
-
-   div.innerHTML +=
-    love is the real default;
-     will gll
-}
 
 
-(qxliidl d d d9we;djgjkddldk;screen;decodeURI;m sa addEventListener;d
-   owpp;s s;oddododoppsppspsmd gps xppxpxpmmdmdpsmgk;a;s;SVGComponentTransferFunctionElement
-   
-   gsowpwwpps;;;dowpspspsp;;kgosmsmsms;spomdmgmmgopsmsmmg
-   WebGLUniformLocation;spmmm;mg;speechSynthesis;SpeechGrammar
-   
-   ogspspspmgpsmsp  
-   poomsspspsmg;  spoom getComputedStyle;s;s; 
-   ommppps; 
-   sooomoppms's
-   hpmsmsmsmps
-   somppm   ppmmmmmpmg spppp getComputedStylesppm apiKeyppp
-   [pm gpppmpm ppmp ;]
-   
-   
-   gpppsppsg
-   
-    pppgspp  pspspp
-    pppppshjhjhoospspphoooo,omsspphmspspspoompspaassx
-    goommsoogspm
-    soookhhkosoohm pooooomoomodfdodomfomgolfdlddodma;somg;ofddomg]om]
-    
-    ogosmsp;ad;ass osmje vosb eof ;ofe amd te begomommg ojing evhe ishte man
-    he is the man for thejob so the fuck asre talking about are you a  fool who is bragging about your money ]]\\\
-    
-    ar eyou ay you a  toke )
+
+
+
+
+
+
+  
