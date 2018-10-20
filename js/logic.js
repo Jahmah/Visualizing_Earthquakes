@@ -1,9 +1,10 @@
-// We create the tile layer that will be the background of our map.
+// create background for tile layer .
 console.log("working");
 
+// Assign Mapbox access token.
 var apiKey = API_KEY;
 
-var graymap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var quakemap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.streets",
@@ -18,15 +19,15 @@ var map = L.map("mapid", {
   zoom: 3
 });
 
-// Then we add our 'graymap' tile layer to the map.
-graymap.addTo(map);
+// Add tile layer to map.
+quakemap.addTo(map);
 
-// Here we make an AJAX call that retrieves our earthquake geoJSON data.
+// AJAX call that retrieves earthquake geoJSON data.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson", function(data) {
 
-  // This function returns the style data for each of the earthquakes we plot on
-  // the map. We pass the magnitude of the earthquake into two separate functions
-  // to calculate the color and radius.
+  // Specify style for plots. Use earthquake magnitude to calculate color and radius
+  // on the the map.
+  
   function styleInfo(feature) {
     return {
       opacity: 1,
@@ -39,7 +40,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     };
   }
 
-  // This function determines the color of the marker based on the magnitude of the earthquake.
+  // Specify color of the marker based on the earthquake  magnitude.
   function getColor(magnitude) {
     switch (true) {
     case magnitude > 5:
